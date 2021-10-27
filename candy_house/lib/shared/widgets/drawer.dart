@@ -1,7 +1,10 @@
+import 'package:candy_house/modulos/home/cubit/home_cubit.dart';
 import 'package:candy_house/modulos/home/page/home_page.dart';
 import 'package:candy_house/modulos/ingredientes/page/ingredientes_page.dart';
 import 'package:candy_house/modulos/login/page/login_page.dart';
+import 'package:candy_house/modulos/products/page/product_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class DrawerWidget extends StatefulWidget {
   const DrawerWidget({Key? key}) : super(key: key);
@@ -70,7 +73,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => HomePage()),
+                    MaterialPageRoute(builder: (context) => HomePage()),      
                   );
                 },
                 title: Text(
@@ -118,7 +121,7 @@ class _DrawerWidgetState extends State<DrawerWidget> {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => HomePage()),
+                    MaterialPageRoute(builder: (context) => ProductPage()),
                   );
                 },
                 title: Text(

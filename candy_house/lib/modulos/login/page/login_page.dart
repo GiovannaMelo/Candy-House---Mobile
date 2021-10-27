@@ -1,6 +1,6 @@
 import 'package:candy_house/modulos/home/page/home_page.dart';
-import 'package:candy_house/shared/button.dart';
-import 'package:candy_house/shared/input.dart';
+import 'package:candy_house/shared/widgets/button.dart';
+import 'package:candy_house/shared/widgets/input.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {

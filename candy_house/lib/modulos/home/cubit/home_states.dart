@@ -6,12 +6,12 @@ class HomeStates extends Equatable {
   @override
   List<Object?> get props => [status, itens];
   final HomeStatus status;
-  final List<HomeItem> itens;
+  final List<IngredientesItem> itens;
 
   const HomeStates._({this.status: HomeStatus.loading, this.itens: const []});
 
   const HomeStates.loading() : this._(status: HomeStatus.loading);
-  const HomeStates.success(List<HomeItem> list)
+  const HomeStates.success(List<IngredientesItem> list)
       : this._(status: HomeStatus.success, itens: list);
   const HomeStates.error() : this._(status: HomeStatus.error);
 }

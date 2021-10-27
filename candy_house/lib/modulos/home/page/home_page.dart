@@ -1,9 +1,8 @@
 import 'package:candy_house/modulos/home/cubit/home_cubit.dart';
-import 'package:candy_house/shared/card.dart';
-import 'package:candy_house/shared/carousel_slider.dart';
-import 'package:candy_house/shared/drawer.dart';
-import 'package:candy_house/shared/input_search.dart';
-import 'package:candy_house/shared/navbar.dart';
+import 'package:candy_house/shared/widgets/card.dart';
+import 'package:candy_house/shared/widgets/carousel_slider.dart';
+import 'package:candy_house/shared/widgets/drawer.dart';
+import 'package:candy_house/shared/widgets/input_search.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -102,7 +101,7 @@ class _HomePageState extends State<HomePage> {
                         padding: EdgeInsets.only(top: 20),
                       ),
                       CarouselSliderWidget(
-                        image: AssetImage("assets/images/trufa.png"),
+                        image: AssetImage("assets/images/produtos/trufa.png"),
                         items: items,
                         options: CarouselOptions(
                           height: 400,

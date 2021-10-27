@@ -1,13 +1,13 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'item_home.dart';
+part of 'item_ingredientes.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-HomeItem _$HomeItemFromJson(Map<String, dynamic> json) {
-  return HomeItem(
+IngredientesItem _$IngredientesItemFromJson(Map<String, dynamic> json) {
+  return IngredientesItem(
     json['idEstoque'] as int,
     json['nome'] as String,
     DateTime.parse(json['dataValidade'] as String),
@@ -18,7 +18,8 @@ HomeItem _$HomeItemFromJson(Map<String, dynamic> json) {
   );
 }
 
-Map<String, dynamic> _$HomeItemToJson(HomeItem instance) => <String, dynamic>{
+Map<String, dynamic> _$IngredientesItemToJson(IngredientesItem instance) =>
+    <String, dynamic>{
       'idEstoque': instance.idEstoque,
       'nome': instance.nome,
       'dataValidade': instance.dataValidade.toIso8601String(),

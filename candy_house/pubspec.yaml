@@ -34,6 +34,8 @@ dependencies:
   flutter_bloc: ^7.3.1
   equatable: ^2.0.3
   dio: ^4.0.1
+  validadores: ^1.0.5
+  mask_text_input_formatter: ^2.0.0
 
 dev_dependencies:
   flutter_test:
@@ -65,9 +67,28 @@ flutter:
    - assets/fonts/Salsa-Regular.ttf
    - assets/fonts/DMSans-Regular.ttf
    - assets/fonts/DMSans-Bold.ttf
-   - assets/images/trufa.png
-   - assets/images/leite.png
+   - assets/images/produtos/trufa.png
+   - assets/images/ingredientes/leite.png
    - assets/images/details.png
+   - assets/images/ingredientes/laranja.png
+   - assets/images/ingredientes/limao.png
+   - assets/images/ingredientes/leitecondesado.png
+   - assets/images/ingredientes/maca.png
+   - assets/images/ingredientes/maracuja.png
+   - assets/images/ingredientes/morango.png
+   - assets/images/ingredientes/farinhadetrigo.png
+   - assets/images/ingredientes/leiteninho.png
+   - assets/images/ingredientes/nutella.png
+   - assets/images/ingredientes/ovos.png
+   - assets/images/ingredientes/barradechocolate.png
+   - assets/images/ingredientes/chocolateempo.png
+   - assets/images/produtos/tortadelimao.png
+   - assets/images/produtos/moussedemaracuja.png
+   - assets/images/produtos/trufadenutella.png
+   - assets/images/ingredientes/manteiga.png
+   - assets/images/produtos/trufadepacoca.png
+   - assets/images/produtos/bolodecenoura.png
+   - assets/images/produtos/moussedelimao.png
 
   fonts:
     - family: Salsa

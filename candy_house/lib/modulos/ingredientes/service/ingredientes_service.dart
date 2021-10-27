@@ -1,8 +1,8 @@
 import 'package:candy_house/shared/model/item_ingredientes.dart';
 import 'package:dio/dio.dart';
 
-class HomeService {
-  Future<List<IngredientesItem>> getHomeItem() async {
+class IngredientesService {
+  Future<List<IngredientesItem>> getIngredientesItem() async {
     final data = await Dio().get('http://10.0.2.2:8080/estoque');
     print(data);
     return List.from(data.data)

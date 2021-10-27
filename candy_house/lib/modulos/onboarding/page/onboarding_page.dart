@@ -1,7 +1,7 @@
 import 'package:candy_house/modulos/create_acount/page/create_page_step1.dart';
 import 'package:candy_house/modulos/login/page/login_page.dart';
-import 'package:candy_house/shared/button.dart';
-import 'package:candy_house/shared/button_next.dart';
+import 'package:candy_house/shared/widgets/button.dart';
+import 'package:candy_house/shared/widgets/button_next.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 

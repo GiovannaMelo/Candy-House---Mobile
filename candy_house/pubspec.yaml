@@ -36,6 +36,7 @@ dependencies:
   dio: ^4.0.1
   validadores: ^1.0.5
   mask_text_input_formatter: ^2.0.0
+  search_cep: ^4.0.0-nullsafety.1
 
 dev_dependencies:
   flutter_test:
@@ -89,6 +90,7 @@ flutter:
    - assets/images/produtos/trufadepacoca.png
    - assets/images/produtos/bolodecenoura.png
    - assets/images/produtos/moussedelimao.png
+   - assets/images/produtos/tortadelimao.png
 
   fonts:
     - family: Salsa

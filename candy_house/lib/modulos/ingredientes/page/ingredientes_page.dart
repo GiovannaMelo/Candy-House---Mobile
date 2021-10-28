@@ -1,4 +1,5 @@
 import 'package:candy_house/modulos/ingredientes/cubit/ingredientes_cubit.dart';
+import 'package:candy_house/modulos/ingredientes/page/create_ingredientes.dart';
 import 'package:candy_house/modulos/login/page/login_page.dart';
 import 'package:candy_house/shared/widgets/card.dart';
 import 'package:candy_house/shared/widgets/drawer.dart';
@@ -96,7 +97,7 @@ class _IngredientesPageState extends State<IngredientesPage> {
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) =>
-                                              const LoginPage(),
+                                              const CreateIngredientePage(),
                                         ),
                                       ),
                                 style: TextStyle(

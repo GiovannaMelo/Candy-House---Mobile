@@ -1,11 +1,21 @@
 import 'package:flutter/material.dart';
 
 class InputWidget extends StatefulWidget {
-  const InputWidget({Key? key, required this.text, required this.icon, this.hint = " "})
+  const InputWidget(
+      {Key? key,
+      required this.text,
+      required this.icon,
+      this.hint = " ",
+      required this.obscureText,
+      this.onSaved, this.validator})
       : super(key: key);
   final String text;
   final IconData icon;
   final String hint;
+  final bool obscureText;
+  final void Function(String?)? onSaved;
+  final String? Function(String?)? validator;
+
   @override
   _InputWidgetState createState() => _InputWidgetState();
 }
@@ -57,6 +67,9 @@ class _InputWidgetState extends State<InputWidget> {
                     ),
                   ),
                 ),
+                obscureText: widget.obscureText,
+                onSaved: widget.onSaved,
+                validator: widget.validator,
               ),
             ],
           ),

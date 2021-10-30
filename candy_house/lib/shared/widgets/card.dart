@@ -55,7 +55,7 @@ class _CardWidgetState extends State<CardWidget> {
                       SizedBox(
                         width: 160,
                         child: Text(
-                          widget.item.nome,
+                         "${widget.item.nome}",
                           overflow: TextOverflow.clip,
                           style: TextStyle(
                             fontSize: 25,
@@ -69,7 +69,7 @@ class _CardWidgetState extends State<CardWidget> {
                         padding: EdgeInsets.only(top: 2),
                       ),
                       Text(
-                        'Validade: ${widget.item.dataValidade.day}/${widget.item.dataValidade.month}/${widget.item.dataValidade.year}',
+                        'Validade: ${widget.item.dataValidade?.day}/${widget.item.dataValidade?.month}/${widget.item.dataValidade?.year}',
                         style: TextStyle(
                           fontSize: 18,
                           color: Colors.white,

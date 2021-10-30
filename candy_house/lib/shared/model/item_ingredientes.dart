@@ -3,30 +3,33 @@ part 'item_ingredientes.g.dart';
 
 @JsonSerializable()
 class IngredientesItem {
-  final int idEstoque;
-  final String nome;
-  final DateTime dataValidade;
-  final double gramas;
-  final double totalGramas;
-  final int quantidade;
-  final double valorCompra;
+   int? idEstoque;
+   String? nome;
+   DateTime? dataValidade;
+   String? unidadeMedida;
+   double? qtdUtilizada;
+   double? totalUtilizado;
+   int? quantidade;
+   double? valorCompra;
   @JsonKey(ignore: true)
-  late String apiName = nome
+  late String apiName = nome!
       .toLowerCase()
       .replaceAll(" ", "")
       .replaceAll("ç", "c")
       .replaceAll("ã", "a");
 
   IngredientesItem(
-    this.idEstoque,
+    {this.idEstoque,
     this.nome,
     this.dataValidade,
-    this.gramas,
-    this.totalGramas,
+    this.unidadeMedida,
+    this.qtdUtilizada,
+    this.totalUtilizado,
     this.quantidade,
-    this.valorCompra,
+    this.valorCompra,}
   );
 
   factory IngredientesItem.fromJson(Map<String, dynamic> json) =>
       _$IngredientesItemFromJson(json);
+  Map<String, dynamic> toJson() => _$IngredientesItemToJson(this);
 }

@@ -152,7 +152,7 @@ class _DescripitionPageState extends State<DescripitionPage> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
-                  widget.item.nome,
+                  "${widget.item.nome}",
                   textAlign: TextAlign.left,
                   style: TextStyle(
                     color: Color(0xFFFF0065),
@@ -193,7 +193,7 @@ class _DescripitionPageState extends State<DescripitionPage> {
                 padding: const EdgeInsets.only(top: 10.0),
                 child: Center(
                   child: ButtonBorderWidget(
-                    text: " ${widget.item.dataValidade.day}/${widget.item.dataValidade.month}/${widget.item.dataValidade.year}",
+                    text: " ${widget.item.dataValidade?.day}/${widget.item.dataValidade?.month}/${widget.item.dataValidade?.year}",
                   ),
                 ),
               ),

@@ -1,6 +1,7 @@
 import 'package:candy_house/modulos/login/page/login_page.dart';
 import 'package:candy_house/modulos/products/cubit/produto_cubit.dart';
 import 'package:candy_house/modulos/products/cubit/produtos_states.dart';
+import 'package:candy_house/modulos/products/page/create_product.dart';
 import 'package:candy_house/shared/widgets/card.dart';
 import 'package:candy_house/shared/widgets/card_product.dart';
 import 'package:candy_house/shared/widgets/drawer.dart';
@@ -96,7 +97,7 @@ class _ProductPageState extends State<ProductPage> {
                                 ..onTap = () => Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                        builder: (context) => const LoginPage(),
+                                        builder: (context) => const CreateProduct(),
                                       ),
                                     ),
                               style: TextStyle(

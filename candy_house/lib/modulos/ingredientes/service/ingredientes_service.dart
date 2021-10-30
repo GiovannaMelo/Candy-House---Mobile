@@ -14,4 +14,12 @@ class IngredientesService {
     final data = await Dio().delete('http://10.0.2.2:8080/estoque/$id');
     print(data);
   }
+
+  Future<void> postCreateIngrediente(IngredientesItem ingredientes) async {
+    print(ingredientes.toJson());
+    final data = await Dio()
+        .post('http://10.0.2.2:8080/estoque', data: ingredientes.toJson());
+    print(data);
+  }
+
 }

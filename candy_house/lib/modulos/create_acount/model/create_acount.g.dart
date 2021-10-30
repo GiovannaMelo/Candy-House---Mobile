@@ -8,7 +8,7 @@ part of 'create_acount.dart';
 
 CreateAcount _$CreateAcountFromJson(Map<String, dynamic> json) {
   return CreateAcount(
-    idConfeitaria: json['idConfeitaria'] as int,
+    idConfeitaria: json['idConfeitaria'] as int?,
     nome: json['nome'] as String?,
     nomeFantasia: json['nomeFantasia'] as String?,
     cnpj: json['cnpj'] as String?,
